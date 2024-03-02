@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+</head>
+<body>    
+    <script>        
+        function fun1(e){            
+            var x=e.clientX;           
+            var y=e.clientY;            
+             document.getElementById("demo").innerHTML= x+" "+y;    
+             }       
+       function fun2(){        
+           document.getElementById("demo2").innerHTML+="1";        
+        }        
+        function fun3(){ 
+           document.getElementById("demo2").innerHTML+="2";        
+        }        
+        function fun4(){            
+            document.getElementById("demo2").innerHTML+="3";        
+        }
+        function fun5(){        
+            document.getElementById("demo2").innerHTML+="4";        
+         }        
+         function fun6(){ 
+            document.getElementById("demo2").innerHTML+="5";        
+         }        
+         function fun7(){            
+             document.getElementById("demo2").innerHTML+="6";        
+         }
+         function fun8(){        
+            document.getElementById("demo2").innerHTML+="7";        
+         }        
+         function fun9(){ 
+            document.getElementById("demo2").innerHTML+="8";        
+         }        
+         function fun10(){            
+             document.getElementById("demo2").innerHTML+="9";        
+         }        
+         function showMessage(buttonNumber) {
+            document.getElementById("message").innerText = "You pushed button " + buttonNumber;
+        }      
+        </script>    
+        <img src="abc.png" usemap="#workplace" height="400px" height="400px" onmousemove="fun1(event)" >    
+        <map name="workplace">        
+            <area shape="circle" coords="145 86 25" onclick=fun1() onmouseover="alert('you pushed 1')">        
+            <area shape="circle" coords="219 88 25" onclick=fun3() onmouseover="alert('you pushed 2')">        
+            <area shape="circle" coords="295 85 30" onclick=fun4() onmouseover="alert('you pushed 3')">        
+            <area shape="circle" coords="94 157 30" onclick=fun5() onmouseover="alert('you pushed 4')">        
+            <area shape="circle" coords="176 157 30" onclick=fun6() onmouseover="alert('you pushed 5')">        
+            <area shape="circle" coords="257 157 30" onclick=fun7() onmouseover="alert('you pushed 6')">        
+            <area shape="circle" coords="95 239 30" onclick=fun8() onmouseover="alert('you pushed 7')">
+            <area shape="circle" coords="176 239 30" onclick=fun9() onmouseover="alert('you pushed 8')">
+                       
+        </map>    
+        <p id="demo"></p>   
+         <p id="demo2"></p>
+        </body>
+        </html>
